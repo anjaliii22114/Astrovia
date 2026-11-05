@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Astrovia – Space Careers, Learning Paths and How Rockets and Satellites Work</title>
+<meta name="description" content="Astrovia is an information site about the path into space science: careers in astronomy and space technology, study routes, key skills, how rockets and satellites work and free learning resources.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.YOURDOMAIN.com/">
+<meta property="og:title" content="Astrovia – Space Careers, Learning Paths and How Rockets and Satellites Work">
+<meta property="og:description" content="Your guide to studying and working in space science, plus simple explanations of rockets and satellites.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.YOURDOMAIN.com/">
+
+<!-- ===== GOOGLE ADSENSE CODE: yahan apna AdSense script paste karein ===== -->
+<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
+<!-- ======================================================================= -->
+
+<!-- Google Analytics (optional): yahan GA4 code paste karein -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"Astrovia","url":"https://www.YOURDOMAIN.com/","description":"Space careers, learning paths and how rockets and satellites work."}
+</script>
+
+<style>
+:root{
+  --ink:#10244A; --bg:#F3F6FB; --paper:#FFFFFF; --blue:#0B4CB8; --orange:#F26B1D;
+  --sky:#1C9BD6; --blueprint:#0A2F73; --muted:#566686; --line:#D5DEEE;
+  --head:'Chakra Petch','Trebuchet MS',Arial,sans-serif;
+  --body:'Nunito Sans',Helvetica,Arial,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root{--ink:#E6EEFF; --bg:#081330; --paper:#0F1F46; --muted:#A5B6DD; --line:#24407D; --blue:#78A8FF; --sky:#5CC4F5; --orange:#FF9150;}
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);font-size:1.1rem;line-height:1.75;color:var(--ink);background:var(--bg)}
+a{color:var(--blue)}
+a:focus-visible,summary:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+.wrap{width:100%;max-width:1200px;margin:0 auto;padding:0 24px}
+
+/* header */
+header{background:var(--paper);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:74px;flex-wrap:wrap}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink);font-family:var(--head);font-weight:700;font-size:1.75rem;letter-spacing:.5px}
+.logo span{color:var(--orange)}
+nav ul{list-style:none;display:flex;gap:22px;flex-wrap:wrap}
+nav a{font-family:var(--head);font-weight:600;font-size:.98rem;text-decoration:none;color:var(--ink)}
+nav a:hover{color:var(--orange)}
+
+/* hero: blueprint grid and a flight path */
+.hero{background-color:var(--blueprint);background-image:
+ linear-gradient(rgba(255,255,255,.08) 1px,transparent 1px),
+ linear-gradient(90deg,rgba(255,255,255,.08) 1px,transparent 1px);
+ background-size:44px 44px;color:#fff;padding:92px 0 80px;position:relative;overflow:hidden}
+.path{position:absolute;right:-20px;bottom:-30px;width:640px;max-width:70%;opacity:.9}
+.hero .wrap{position:relative;z-index:1}
+.hero h1{font-family:var(--head);font-weight:700;font-size:clamp(2.3rem,6vw,4.4rem);line-height:1.04;max-width:15ch}
+.hero p{max-width:58ch;margin-top:22px;color:#D6E3FF}
+.btn{display:inline-block;margin-top:30px;background:var(--orange);color:#fff;font-family:var(--head);font-weight:700;padding:13px 30px;border-radius:4px;text-decoration:none}
+.btn:hover{background:#D5560E}
+.tags{display:flex;gap:10px;flex-wrap:wrap;margin-top:34px}
+.tags a{font-family:var(--head);font-size:.95rem;color:#fff;border:1px solid #5C80C6;padding:4px 16px;border-radius:4px;text-decoration:none}
+.tags a:hover{border-color:#FFB07F;color:#FFB07F}
+
+/* layout */
+main{padding:56px 0}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:48px}
+article.section{margin-bottom:56px;scroll-margin-top:96px}
+h2{font-family:var(--head);font-weight:700;font-size:clamp(1.7rem,3vw,2.3rem);line-height:1.15;margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid var(--line);position:relative}
+h2::after{content:"";position:absolute;left:0;bottom:-2px;width:72px;height:4px;background:var(--orange)}
+h3{font-family:var(--head);font-size:1.25rem;margin:24px 0 6px}
+p{margin-bottom:16px}
+ul.list,ol.list{margin:0 0 18px 24px}
+ul.list li,ol.list li{margin-bottom:8px}
+.box{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:20px 24px;margin:22px 0}
+.tip{border-left:6px solid var(--orange)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin:18px 0}
+.cards .box{margin:0;border-top:5px solid var(--blue)}
+.cards .box:nth-child(3n+2){border-top-color:var(--sky)}
+.cards .box:nth-child(3n){border-top-color:var(--orange)}
+.cards h3{margin-top:0}
+table{width:100%;border-collapse:collapse;margin:18px 0;font-size:1rem}
+.scroll{overflow-x:auto}
+th,td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-family:var(--head);background:var(--paper)}
+
+/* ads: clearly labelled, never disguised as content */
+.ad{margin:36px 0;text-align:center}
+.ad small{display:block;font-family:var(--head);font-size:.76rem;color:var(--muted);margin-bottom:6px}
+.ad .slot{min-height:120px;border:1px dashed var(--line);display:flex;align-items:center;justify-content:center;color:var(--muted);border-radius:6px}
+
+/* sidebar */
+aside .box h3{margin-top:0}
+aside ul{list-style:none}
+aside li{margin-bottom:10px;font-family:var(--head);font-size:1rem}
+.sticky{position:sticky;top:100px}
+
+/* faq */
+details{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:14px 20px;margin-bottom:12px}
+summary{font-family:var(--head);font-weight:600;cursor:pointer}
+details p{margin:12px 0 0}
+
+/* disclaimer */
+.disclaimer{background:var(--paper);border:2px solid var(--orange);border-radius:8px;padding:26px 28px;font-size:1rem}
+.disclaimer h2{border:none;padding:0}
+.disclaimer h2::after{display:none}
+
+/* footer */
+footer{background:#071A40;color:#BCCBEA;padding:48px 0 28px;font-size:1rem}
+.fgrid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:32px}
+footer h4{font-family:var(--head);color:#fff;font-size:1.15rem;margin-bottom:12px}
+footer a{color:#BCCBEA;text-decoration:none}
+footer a:hover{color:#FFB07F}
+footer ul{list-style:none}
+footer li{margin-bottom:8px}
+.copy{border-top:1px solid #1F3A74;margin-top:32px;padding-top:20px;text-align:center;font-size:.9rem}
+
+@media (max-width:900px){
+  .layout{grid-template-columns:1fr}
+  .sticky{position:static}
+  .fgrid{grid-template-columns:1fr}
+  header{position:static}
+  .path{opacity:.35}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="/" aria-label="Astrovia home">
+      <svg width="48" height="48" viewBox="0 0 64 64" aria-hidden="true">
+        <rect x="2" y="2" width="60" height="60" rx="12" fill="#0A2F73"/>
+        <path d="M14 50L32 14l18 36" fill="none" stroke="#fff" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+        <path d="M6 44C22 54 44 40 56 14" fill="none" stroke="#F26B1D" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="1 6"/>
+        <circle cx="32" cy="14" r="4.5" fill="#F26B1D"/>
+      </svg>
+      Astro<span>via</span>
+    </a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#why">Why Space</a></li>
+        <li><a href="#path">Study Path</a></li>
+        <li><a href="#careers">Careers</a></li>
+        <li><a href="#tech">How It Works</a></li>
+        <li><a href="#resources">Free Resources</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <svg class="path" viewBox="0 0 640 260" aria-hidden="true">
+    <path d="M10 250C160 240 330 150 470 40C520 2 580 -6 630 8" fill="none" stroke="#F26B1D" stroke-width="4" stroke-dasharray="2 12" stroke-linecap="round"/>
+    <circle cx="470" cy="40" r="9" fill="#fff"/>
+    <circle cx="630" cy="8" r="6" fill="#F26B1D"/>
+  </svg>
+  <div class="wrap">
+    <h1>Your route to a life in space science.</h1>
+    <p>Astrovia is an independent information site for students, parents and curious adults who want to understand the path into astronomy and space technology. We explain study routes, career options, key skills and how rockets and satellites actually work, in plain language.</p>
+    <a class="btn" href="#path">Plan your path</a>
+    <div class="tags">
+      <a href="#path">What to study</a>
+      <a href="#careers">Space careers</a>
+      <a href="#tech">Rockets and satellites</a>
+      <a href="#resources">Learn for free</a>
+    </div>
+  </div>
+</section>
+
+<main>
+<div class="wrap layout">
+
+<div class="content">
+
+  <article class="section" id="why">
+    <h2>Why choose a path in space science?</h2>
+    <p>Space work is much wider than being an astronaut. Thousands of people work on rockets, satellites, telescopes, data analysis, software, communication and education. Space technology also shapes everyday life through weather forecasts, navigation, television, mobile networks and mapping.</p>
+    <p>India has a long record in this field. The Indian Space Research Organisation (ISRO) was formed in 1969, and Rakesh Sharma became the first Indian to travel to space in 1984. Today, public and private organisations around the world hire people with many different backgrounds.</p>
+    <div class="box tip"><strong>Good to know:</strong> you do not need to be a genius. Curiosity, steady effort in maths and science and a willingness to keep learning matter most.</div>
+  </article>
+
+  <article class="section" id="path">
+    <h2>A step-by-step study path</h2>
+    <p>Routes differ by country and institution, so treat this as a general map and confirm details with official sources.</p>
+    <div class="scroll">
+    <table>
+      <thead><tr><th>Stage</th><th>What to focus on</th><th>Helpful activities</th></tr></thead>
+      <tbody>
+        <tr><td>School (up to Class 10)</td><td>Strong basics in maths and science, reading and English</td><td>Stargazing, science fairs, building simple models</td></tr>
+        <tr><td>Senior school (Class 11–12)</td><td>Physics, chemistry and maths (PCM) are common for engineering and physics routes</td><td>Olympiads, coding basics, astronomy clubs</td></tr>
+        <tr><td>Undergraduate degree</td><td>B.Tech or B.E. in aerospace, electronics, computer science or mechanical, or B.Sc. in physics or maths</td><td>Projects, internships, student satellite or rocketry teams</td></tr>
+        <tr><td>Postgraduate (optional)</td><td>M.Tech or M.Sc. in astronomy, astrophysics, space science or related subjects</td><td>Research projects, conferences</td></tr>
+        <tr><td>Doctorate (for research careers)</td><td>PhD in astronomy, astrophysics or space science</td><td>Publishing papers, working with observatories and labs</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p>Some specialised institutions, such as the Indian Institute of Space Science and Technology (IIST), focus on space subjects. Admission rules and entrance exams change every year, so always check the official website of the institution before applying.</p>
+  </article>
+
+  <div class="ad" aria-label="Advertisement">
+    <small>Advertisement</small>
+    <!-- ===== ADSENSE AD UNIT 1: yahan apna ad code paste karein ===== -->
+    <!--
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="1111111111" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    -->
+    <div class="slot">Ad space</div>
+  </div>
+
+  <article class="section" id="careers">
+    <h2>Careers in the space sector</h2>
+    <div class="cards">
+      <div class="box"><h3>Astronomer or astrophysicist</h3><p>Studies stars, galaxies and the universe using telescopes, data and theory. Usually needs a PhD.</p></div>
+      <div class="box"><h3>Aerospace engineer</h3><p>Designs and tests rockets, spacecraft and aircraft structures and propulsion systems.</p></div>
+      <div class="box"><h3>Satellite and electronics engineer</h3><p>Builds the electronics, sensors and communication systems that satellites need to work.</p></div>
+      <div class="box"><h3>Software and data specialist</h3><p>Writes mission software, processes satellite images and analyses telescope data.</p></div>
+      <div class="box"><h3>Mission operations</h3><p>Monitors spacecraft, plans manoeuvres and works with ground stations around the clock.</p></div>
+      <div class="box"><h3>Science communicator or teacher</h3><p>Explains space science through teaching, writing, museums, planetariums and media.</p></div>
+    </div>
+    <p>Astronaut selection is extremely competitive, and requirements are set by each space agency. Most space careers are on the ground, and they are just as important to every mission.</p>
+  </article>
+
+  <article class="section" id="tech">
+    <h2>How rockets and satellites work</h2>
+    <h3>Rockets in simple terms</h3>
+    <p>A rocket works by throwing hot gas out of its engines in one direction, which pushes the rocket the other way. This is Newton's third law of motion. Because rockets must carry fuel and oxidiser with them, they are built in stages. Each stage drops away once its fuel is used, so the rest of the rocket becomes lighter and goes faster.</p>
+    <h3>Key numbers and ideas</h3>
+    <div class="scroll">
+    <table>
+      <thead><tr><th>Concept</th><th>What it means</th></tr></thead>
+      <tbody>
+        <tr><td>Low Earth orbit (LEO)</td><td>An orbit a few hundred kilometres above Earth, with speeds of about 7.8 km/s. The International Space Station is in this region.</td></tr>
+        <tr><td>Escape velocity</td><td>The speed needed to leave Earth's gravity without further thrust, about 11.2 km/s from the surface.</td></tr>
+        <tr><td>Geostationary orbit</td><td>An orbit about 35,786 km above the equator where a satellite stays above the same spot, which is useful for television and communication.</td></tr>
+        <tr><td>Payload</td><td>The satellite, spacecraft or cargo that a rocket carries.</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <h3>What satellites do</h3>
+    <ul class="list">
+      <li><strong>Communication:</strong> television, internet and phone links.</li>
+      <li><strong>Weather and climate:</strong> cloud images and storm tracking.</li>
+      <li><strong>Navigation:</strong> systems like GPS and India's NavIC help find positions.</li>
+      <li><strong>Earth observation:</strong> mapping crops, forests, water and cities.</li>
+      <li><strong>Science:</strong> space telescopes and probes studying the universe.</li>
+    </ul>
+  </article>
+
+  <div class="ad" aria-label="Advertisement">
+    <small>Advertisement</small>
+    <!-- ===== ADSENSE AD UNIT 2: yahan apna ad code paste karein ===== -->
+    <!--
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="2222222222" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    -->
+    <div class="slot">Ad space</div>
+  </div>
+
+  <article class="section" id="skills">
+    <h2>Skills worth building early</h2>
+    <ul class="list">
+      <li><strong>Mathematics:</strong> algebra, geometry, calculus and statistics are the language of space science.</li>
+      <li><strong>Physics:</strong> motion, forces, energy, light and gravity.</li>
+      <li><strong>Programming:</strong> Python is widely used for data analysis and simulation.</li>
+      <li><strong>Problem solving and teamwork:</strong> space projects are built by large teams.</li>
+      <li><strong>Clear communication:</strong> writing and presenting your ideas matters in every career.</li>
+    </ul>
+  </article>
+
+  <article class="section" id="resources">
+    <h2>Free ways to start learning</h2>
+    <ul class="list">
+      <li>Join a local astronomy club or science society and attend public star-gazing nights.</li>
+      <li>Take free online courses in physics, maths and Python from reputable platforms, including government-supported initiatives such as NPTEL.</li>
+      <li>Try citizen-science projects, where volunteers help classify galaxies or search telescope data.</li>
+      <li>Read official education pages of space agencies such as ISRO, NASA and ESA.</li>
+      <li>Visit planetariums, science museums and space exhibitions when you can.</li>
+      <li>Keep an observation journal and record what you see in the night sky.</li>
+    </ul>
+    <div class="box tip"><strong>Be careful:</strong> avoid paying for courses that guarantee a job at a space agency. Hiring is done through official, published processes, so always verify on the agency's own website.</div>
+  </article>
+
+  <article class="section" id="faq">
+    <h2>Frequently asked questions</h2>
+    <details>
+      <summary>Do I need to be an engineer to work in space?</summary>
+      <p>No. Space organisations also hire physicists, mathematicians, computer scientists, data analysts, communicators, lawyers, managers and many others.</p>
+    </details>
+    <details>
+      <summary>Can I study space science after arts or commerce?</summary>
+      <p>Technical roles usually need maths and science, but non-technical roles such as communication, policy, administration and education are open to other backgrounds. Check eligibility for each course carefully.</p>
+    </details>
+    <details>
+      <summary>Is a PhD necessary?</summary>
+      <p>A PhD is generally needed for research and professor roles in astronomy. Many engineering and technical roles require a bachelor's or master's degree instead.</p>
+    </details>
+    <details>
+      <summary>Does Astrovia offer admissions, coaching or jobs?</summary>
+      <p>No. Astrovia is an informational website only. We do not run courses, offer coaching or recruit for any organisation.</p>
+    </details>
+  </article>
+
+  <article class="section" id="about">
+    <h2>About Astrovia</h2>
+    <p>Astrovia was created to give students and families a clear and honest starting point for learning about space careers. We write original guides, avoid false promises, and update our pages when we find mistakes or when official information changes.</p>
+    <p>Questions, corrections or suggestions are welcome. Email us at <a href="mailto:contact@YOURDOMAIN.com">contact@YOURDOMAIN.com</a>.</p>
+  </article>
+
+  <section class="disclaimer" id="disclaimer" aria-labelledby="disc-title">
+    <h2 id="disc-title">Disclaimer</h2>
+    <p>The content on Astrovia is provided for general information and educational purposes only. It is not professional career, admission, financial or legal advice, and it does not guarantee admission, employment or any particular result.</p>
+    <p>Eligibility rules, entrance exams, fees and recruitment processes change often and differ between institutions and countries. Always confirm details on the official websites of the relevant universities, space agencies and employers before you make any decision. Scientific explanations are simplified for general readers.</p>
+    <p>We try to keep information accurate but cannot guarantee that it is complete or current. You use it at your own risk, and Astrovia is not liable for any loss or damage arising from its use. Astrovia is not affiliated with or endorsed by ISRO, NASA, ESA or any other organisation mentioned, and all names and trademarks belong to their respective owners. External links and advertisements, including those served by third-party networks such as Google AdSense, are shown for convenience and are clearly labelled. We do not control their content.</p>
+  </section>
+
+</div>
+
+<aside>
+  <div class="sticky">
+    <div class="box">
+      <h3>On this page</h3>
+      <ul>
+        <li><a href="#why">Why space science</a></li>
+        <li><a href="#path">Study path</a></li>
+        <li><a href="#careers">Careers</a></li>
+        <li><a href="#tech">Rockets and satellites</a></li>
+        <li><a href="#skills">Skills to build</a></li>
+        <li><a href="#resources">Free resources</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#disclaimer">Disclaimer</a></li>
+      </ul>
+    </div>
+    <div class="ad">
+      <small>Advertisement</small>
+      <!-- ===== ADSENSE AD UNIT 3 (sidebar): yahan apna ad code paste karein ===== -->
+      <div class="slot" style="min-height:250px">Ad space</div>
+    </div>
+  </div>
+</aside>
+
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <h4>Astrovia</h4>
+        <p>Independent information about space careers, study paths and how rockets and satellites work. Educational content only.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#path">Study path</a></li>
+          <li><a href="#careers">Careers</a></li>
+          <li><a href="#tech">Rockets and satellites</a></li>
+          <li><a href="#resources">Free resources</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <!-- Apne pages ke sahi link yahan lagayein -->
+          <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="/terms.html">Terms and Conditions</a></li>
+          <li><a href="#disclaimer">Disclaimer</a></li>
+          <li><a href="#about">About / Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copy">&copy; <span id="yr">2026</span> Astrovia. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>
